@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>find my sound</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css"/>
+		<script src="./index-front.js"></script>
+
+	</head>
+	<body>
+	<div id="contentPage">
+			<div class="header navbar-fixed-top">
+				<div class="row">
+					<div class="NavButtonDiv col-xs-3">
+						<div id="homeAmpButton"><img class="ampSubmitLogo" src="./assets/amp.jpg"/ title="home"></div>
+					</div>
+					<div class="titleDiv col-xs-6">
+						<h1>FIND MY SOUND</h1>
+					</div>
+					<div class="ampButtonDiv col-xs-3">
+						<div id="homeAddAmp"><img class="ampSubmitLogo" src="./assets/amp2.jpg" title="Add an Amp"/></div>
+					</div>
+				</div>
+			</div>
+		<div class="row searchRow">
+			<div id="custom-search-input">
+                <div class="input-group col-md-3">
+                	<form id="search-form">
+                        <span class="input-group-btn">
+                            <input type="text" class="search-query form-control" placeholder="Search all amps" />
+                            <button id="searchButton" class="btn btn-danger" type="submit">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                	</form>
+                </div>
+            </div>
+		</div>
+		<div class="container">
+			<div class="row contentRow grid">
+
+				<p id="searchResults"></p>
+
+				<div id="template" class="col-lg-6 col-sm-12 noteContainerContainer grid-item" style="display:none">
+					<div class="noteContainer">
+						<h4 class="amp_model">Model:</h3>
+						<h4 class="amp_manufacturer">Manufacturer:</h5>
+						<h4 class="amp_style">Style:</h5>
+						<h4 class="wattage">Wattage:</h5>
+						<h4 class="image"></h5>
+						<div class="features">Features:</div>
+
+					</div>
+					<!-- <div class="run"></div> -->
+				</div>
+				<div id="generateNote"></div>
+			</div>
+
+			<div class="row displayRow" style="display:none">
+				<div class="col-md-12">
+    				<h4 class="amp_model">Model:</h2>
+    				<h4 class="amp_manufacturer">Manufacturer:</h6>
+    				<h4 class="amp_style">Style:</h4>
+					<h4 class="wattage">Wattage:</h4>
+					<h4 class="image"></h4>
+					<p class="features">Features:</p>
+
+				</div>
+			</div>
+		</div>
+    </div>
+	</body>
+</html>

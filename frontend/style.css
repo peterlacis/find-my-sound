@@ -1,0 +1,189 @@
+.row {
+	font-family: 'Proza Libre', sans-serif;
+	border-radius: 4px;
+	padding: 20px;
+}
+body {
+	background-color: #333333;
+	padding-top: 160px;
+	padding-bottom: 50px
+}
+.container {
+	/*background-color: #B25400;*/
+	background-color: #666666;
+	padding: 20px;
+}
+.header {
+	text-align: center;
+	background-color: #999999;
+	border-bottom: 5px solid black;
+}
+#editor {
+    height: 300px;
+    width: 600px;
+}
+h1 {
+	font-size: 58px;
+	font-weight: bold;
+}
+#submit_amp {
+	background-color: #333333;
+	color: #666666;
+	border-color: #999999;
+	outline: none;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 5px;
+	font-weight: bold;
+}
+#submit_amp:hover {
+	background-color: #333333;
+	color: #666666;
+}
+.ampSubmitLogo {
+	margin-top: 10px;
+	height: 70px;
+	cursor: pointer;
+}
+.contentDiv {
+	border: 2px solid white;
+	border-radius: 4px;
+}
+.contentRow {
+	padding: 0px 0;
+	background-color: #333333;
+}
+.displayRow {
+	background-color: #666666;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+#custom-search-input .search-query {
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 1;
+}
+.search-query:focus {
+	outline: none;
+}
+.noteContainerContainer {
+	float: left;
+	padding: 15px 30px 0px 30px;
+	margin-bottom: 0px;
+	background-color: #333333;
+}
+.noteContainer {
+	background-color: #666666;
+	padding: 10px;
+	border: 2px solid #;
+	border-radius: 4px;
+	cursor: pointer;
+	height: 100%;
+}
+.noteContainer h3 {
+	font-weight: bold;
+	margin: 5px 5px 0px 5px;
+	border-bottom: 2px solid black;
+}
+.displayTitle {
+	font-weight: bold;
+	cursor: pointer;
+	border-bottom: 2px solid black;
+}
+.displayDescription {
+	font-size: 18px;
+	border-top: 2px solid black;
+	padding: 20px 0;
+	border-bottom: 2px solid black;
+}
+.eachNote {
+	max-height: 330px;
+	border-radius: 5px;
+	overflow: scroll;
+	background-color: #333333;
+}
+.ampContainer {
+	background: #666666;
+	padding: 40px;
+	border-radius: 4px;
+}
+/*.the_von_stache {
+	height: 40px;
+}*/
+input {
+	border: none;
+	border-color: transparent;
+	border-bottom: 2px solid gray;
+	outline: none;
+	background-color: white;
+}
+.input-group {
+	margin: 0 auto;
+}
+#amp_title {
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+#amp_author {
+	font-size: 23px
+}
+#amp_details {
+	margin: 10px 0;
+	width: 500px;
+	font-size: 23px;
+	font-color: #ffffff;
+}
+#amp_description {
+	margin: 10px 0;
+	font-size: 23px;
+}
+#custom-search-input button {
+    border: 0;
+    background: none;
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    right: 24px;
+    top: 4px;
+    z-index: 2;
+    outline: none;
+    margin-bottom: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color:#5EA3B2;
+}
+#searchResults {
+	margin-left: 38px;
+}
+.form-login {
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#666666;
+    border-width: 5px;
+    box-shadow:0 1px 0 #999999;
+}
+
+#loginPage h4 {
+ border:0 solid #333333;
+ border-bottom:1px solid black;
+ padding-bottom:10px;
+ text-align: center;
+}
+#loginPage a {
+	background-color: #666666;
+	color: #999999;
+}
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
