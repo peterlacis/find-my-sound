@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EDIT AN AMP</title>
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+</head>
+
+<body>
+		<div class="row header navbar-fixed-top">
+
+            <div class="ampButtonDiv col-xs-3">
+				<div id="ampHomeButton"><img class="ampSubmitLogo" src="./assets/amp.jpg"/></div>
+			</div>
+
+            <div class="titleDiv col-xs-6">
+				<h1>EDIT AN AMP</h1>
+			</div>
+		</div>
+
+    <div class="container">
+		<div class="noteContainerMaster">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ampContainer">
+                        <!-- <div class="amp_details"><input id = "_id" display="none"/></div> -->
+                        <div class="amp_details"><input id="amp_model" placeholder="Model" /></div>
+						<div class="amp_details"><input id="amp_manufacturer" placeholder="Manufacturer"/></div></h3>
+						<div class="amp_details"><input id="amp_style" placeholder="Style (e.g. rock, metal, blues, country...)" /></div>
+						<div class="amp_details"><input id="wattage" placeholder="Wattage" /></div>
+						<div class="amp_features"><textarea id="features" rows="4" cols="65" placeholder="Features"></textarea></div>
+						<div class="amp_features"><input id="image" placeholder="Image" /></div>
+						<button type=button id="save_amp" class="btn btn-default"> Save Changes </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+    var queryString = new Array();
+    $(function () {
+        if (queryString.length == 0) {
+            if (window.location.search.split('?').length > 1) {
+                var params = window.location.search.split('?')[1].split('&');
+                for (var i = 0; i < params.length; i++) {
+                    var key = params[i].split('=')[0];
+                    var value = decodeURIComponent(params[i].split('=')[1]);
+                    queryString[key] = value;
+                }
+            }
+        }
+        if (queryString["id"] != null) {
+            var ampDiv = $('.ampContainer');
+            console.log(ampDiv);
+            $.get("/ampdetail?query=" + value, function(response){
+                var amp = response[0];
+                // ampDiv.find('._id').text(amp._id.toString());
+                ampDiv.find('#amp_model').val(amp.amp_model);
+                // newNoteDiv.find('.noteContainer').click(handleNoteClick);
+                ampDiv.find('#amp_manufacturer').val(amp.amp_manufacturer);
+                ampDiv.find('#amp_style').val(amp.amp_style);
+                ampDiv.find('#wattage').val(amp.wattage);
+                ampDiv.find('#features').val(amp.features);
+                ampDiv.find('#image').val(amp.image);
+				});
+        }
+    });
+
+    $(document).ready(function () {
+		$('#ampHomeButton').on('click', function() {
+			window.location.href = "/";
+		});
+
+		function editAmp(_id, amp_model, amp_manufacturer, amp_style, wattage, features, image) {
+
+	            $.post("/edit_amp", {
+                    _id: _id,
+                    amp_model: amp_model,
+	            	amp_manufacturer: amp_manufacturer,
+	            	amp_style: amp_style,
+	            	wattage: wattage,
+	            	features: features,
+					image: image
+	            }, function(response) {
+	            	window.location.href = "/";
+	            });
+
+        }
+
+        $("#save_amp").click(function() {
+            editAmp(
+                queryString["id"],
+                $("#amp_model").val(),
+            	$("#amp_manufacturer").val(),
+            	$("#amp_style").val(),
+            	$("#wattage").val(),
+				$("#features").val(),
+				$("#image").val()
+			);
+        });
+	});
+	</script>
+</body>
+</html>

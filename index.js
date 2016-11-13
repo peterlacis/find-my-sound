@@ -58,7 +58,8 @@ app.get("/amps", (req, res) => {
 				{"amp_style":new RegExp(inputArr[0],'i')},
 				{"wattage": parseInt(inputArr[0]) || -1 },
 				{"features":new RegExp(inputArr[0],'i')},
-				{"image":new RegExp(inputArr[0],'i')}
+				{"image":new RegExp(inputArr[0],'i')},
+				// {"_id": inputArr[0]}
 
 			]
 
@@ -82,6 +83,35 @@ app.get("/amps", (req, res) => {
 	}
 });
 
+// powers the amp detail query lookup functionality
+app.get("/ampdetail", (req, res) => {
+	if (typeof req.query.query != 'undefined') {
+		var input = req.query.query.toLowerCase();
+		var inputArr = input.split(" ");
+		Amp.find(
+
+			{"_id": inputArr[0]}
+
+		, function(err,results){
+			if (err) {
+				console.log(err);
+				res.status(500);
+				res.send(err);
+				return;
+			}
+			if (results) {
+				res.send(results);
+			} else {
+				res.send("No amps for you!");
+			}
+		});
+	} else {
+		// send everything (no filter set)
+		Amp.find((err, amps) => res.send(amps));
+	}
+});
+
+// posting a NEW amp
 app.post("/add_amp", (req, res) => {
 	var amp = new Amp({
         amp_model: req.body.amp_model,
@@ -142,6 +172,44 @@ app.post("/add_amp", (req, res) => {
 	  } else {
 	    res.send("amp saved!");
 	  }
+	});
+});
+
+// posting an EDIT to an amp
+app.post("/edit_amp", (req, res) => {
+	console.log(req.body);
+	// var amp = Amp({
+	// 	_id: req.body._id,
+	// 	amp_model: req.body.amp_model,
+	// 	amp_manufacturer: req.body.amp_manufacturer,
+	// 	amp_style: req.body.amp_style,
+	// 	wattage: req.body.wattage,
+	// 	features: req.body.features,
+	// 	image: req.body.image
+	//
+	// });
+
+	Amp.findOneAndUpdate(
+		{
+			_id: req.body._id},
+			{amp_model: req.body.amp_model,
+			amp_manufacturer: req.body.amp_manufacturer,
+			amp_style: req.body.amp_style,
+			wattage: req.body.wattage,
+			features: req.body.features,
+			image: req.body.image},
+
+			{new: true},
+	(err, data) => {
+
+	  if (err) {
+	    console.log(err);
+	    res.send("There was an error saving your amp!");
+
+	  } else {
+	    res.send("amp saved!");
+	  }
+
 	});
 });
 

@@ -1,0 +1,19 @@
+To view what are the active sessions:
+
+tmux list-sessions
+
+to attach to an existing sessions (e.g. mongo or node already running):
+
+tmux attach -t mongo
+tmux attach -t nodemon
+
+to `escape` from the TMUX session so that you can disconnect without closing the process  press `control` `B` then `D`
+
+to start a new TMUX session (e.g after server reboot and you want to get mongo and nodemon running):
+
+tmux new -s mongo
+tmux new -s nodemon
+
+iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
+iptables -A INPUT -i eth0 -p tcp --dport 5000 -j ACCEPT
+iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 5000

@@ -17,39 +17,53 @@ $(document).ready(function () {
 		$('#searchResults').show();
 	});
 
-	// content of note card when clicked
+
+
+	// // content of note card when clicked
 	function handleNoteClick(evt) {
+
 		var target = $(evt.target);
 		target = target.parents('.noteContainerContainer');
-		var parentTarget = target.parents('.contentRow').siblings('.displayRow');
-		var noteObj = {
-			"amp_model": target.find('.amp_model').text(),
-			"amp_manufacturer": target.find('.amp_manufacturer').text(),
-			"amp_style" : target.find('.amp_style').text(),
-			"wattage" : target.find('.wattage').text(),
-			"features": target.find('.features').text(),
-			"image": target.find('.image').html()
 
-		};
+		var url = "amp_detail.html?id=" + target.find('._id').html();
+		   window.location.href = url;
 
-		// Content of lables
-		parentTarget.find('.amp_model').text(noteObj.amp_model);
-		// if (noteObj.description) {
-		// parentTarget.find('.amp_manufacturer').text(noteObj.amp_manufacturer);}
-		parentTarget.find('.amp_manufacturer').text(noteObj.amp_manufacturer);
-		parentTarget.find('.amp_style').text(noteObj.amp_style);
-		parentTarget.find('.wattage').text(noteObj.wattage);
-		parentTarget.find('.features').text(noteObj.features);
-		parentTarget.find('.image').html(noteObj.image);
+	   }
 
-		$('.contentRow').hide();
-		$('.displayRow').show();
-		window.scrollTo(0, 0);
-	}
+
+		// var parentTarget = target.parents('.contentRow').siblings('.displayRow');
+		// var noteObj = {
+		//
+		// 	"_id": target.find('._id').html(),
+		// 	"amp_model": target.find('.amp_model').text(),
+		// 	"amp_manufacturer": target.find('.amp_manufacturer').text(),
+		// 	"amp_style" : target.find('.amp_style').text(),
+		// 	"wattage" : target.find('.wattage').text(),
+		// 	"features": target.find('.features').text(),
+		// 	"image": target.find('.image').html()
+		//
+		// };
+
+		// Content of labels
+		// parentTarget.find('._id').text(noteObj._id.toString());
+		// parentTarget.find('.amp_model').text(noteObj.amp_model);
+		// parentTarget.find('.amp_manufacturer').text(noteObj.amp_manufacturer);
+		// parentTarget.find('.amp_style').text(noteObj.amp_style);
+		// parentTarget.find('.wattage').text(noteObj.wattage);
+		// parentTarget.find('.features').text(noteObj.features);
+		// parentTarget.find('.image').html(noteObj.image);
+		//
+		// $('.contentRow').hide();
+		// $('.displayRow').show();
+		// window.scrollTo(0, 0);
+	// }
 
 	function createNote(amp) {
 		var newNoteDiv = $('#template').clone(true, true);
-		newNoteDiv.removeAttr("id");
+		console.log(newNoteDiv);
+		// newNoteDiv.removeAttr("_id");
+		newNoteDiv.find('._id').text(amp._id.toString());
+
 		newNoteDiv.find('.amp_model').text("Model: " + amp.amp_model);
 		newNoteDiv.find('.noteContainer').click(handleNoteClick);
 		newNoteDiv.find('.amp_manufacturer').text("Manufacturer: " + amp.amp_manufacturer);

@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>find my sound</title>
+		<title>AMP DETAIL</title>
 		<script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -19,14 +19,14 @@
 						<div id="homeAmpButton"><img class="ampSubmitLogo" src="./assets/amp.jpg"/ title="home"></div>
 					</div>
 					<div class="titleDiv col-xs-6">
-						<h1>FIND MY SOUND</h1>
+						<h1>AMP DETAIL</h1>
 					</div>
 					<div class="ampButtonDiv col-xs-3">
 						<div id="homeAddAmp"><img class="ampSubmitLogo" src="./assets/amp2.jpg" title="Add an Amp"/></div>
 					</div>
 				</div>
 			</div>
-		<div class="row searchRow">
+		<!-- <div class="row searchRow">
 			<div id="custom-search-input">
                 <div class="input-group col-md-3">
                 	<form id="search-form">
@@ -39,27 +39,30 @@
                 	</form>
                 </div>
             </div>
-		</div>
+		</div> -->
 		<div class="container">
-			<div class="row contentRow grid">
+
+            <div class="row contentRow grid">
 
 				<p id="searchResults"></p>
 
 				<!-- This is the main view of the initial search results -->
-				<div id="template" class="col-lg-6 col-sm-12 noteContainerContainer grid-item" style="display:none">
+				<div id="detail" class="col-lg-6 col-sm-12 noteContainerContainer grid-item" >
 					<div class="noteContainer">
-						<h4 class="_id" style = "display: none">ID:</h4>
-						<h4 class="amp_model">Model:</h4>
-						<h4 class="amp_manufacturer">Manufacturer:</h4>
-						<h4 class="amp_style">Style:</h4>
-						<h4 class="wattage">Wattage:</h4>
-						<h4 class="image"></h4>
+						<!-- <h4 class="_id">ID:</h3> -->
+						<h4 class="amp_model">Model:</h3>
+						<h4 class="amp_manufacturer">Manufacturer:</h5>
+						<h4 class="amp_style">Style:</h5>
+						<h4 class="wattage">Wattage:</h5>
+						<h4 class="image"></h5>
 						<div class="features">Features:</div>
+						<!-- <button type=button id="edit_amp" class="btn btn-default"> Edit Amp </button> -->
+
 
 		 			</div>
 					<!-- <div class="run"></div> -->
 				</div>
-				<div id="generateNote"></div>
+				<!-- <div id="generateNote"></div> -->
 			</div>
 
 			<!-- This is the detail view once an amp is clicked -->
@@ -77,22 +80,47 @@
 			</div> -->
 		</div>
     </div>
+    <script type="text/javascript">
+    var queryString = new Array();
+    $(function () {
+        if (queryString.length == 0) {
+            if (window.location.search.split('?').length > 1) {
+                var params = window.location.search.split('?')[1].split('&');
+                for (var i = 0; i < params.length; i++) {
+                    var key = params[i].split('=')[0];
+                    var value = decodeURIComponent(params[i].split('=')[1]);
+                    queryString[key] = value;
+                }
+            }
+        }
+        if (queryString["id"] != null) {
+            var ampDiv = $('#detail');
+            console.log(ampDiv);
+            $.get("/ampdetail?query=" + value, function(response){
+                var amp = response[0];
+                // ampDiv.find('._id').text(amp._id.toString());
+                ampDiv.find('.amp_model').text("Model: " + amp.amp_model);
+                ampDiv.find('.noteContainer').click(handleEditClick);
+                ampDiv.find('.amp_manufacturer').text("Manufacturer: " + amp.amp_manufacturer);
+                ampDiv.find('.amp_style').text("Style: " + amp.amp_style);
+                ampDiv.find('.wattage').text("Wattage: " + amp.wattage);
+                ampDiv.find('.features').text("Features: " + amp.features);
+                ampDiv.find('.image').html("<img src='" + amp.image + "'>");
+				});
+        }
+    });
 
-	<!-- <script>
 
-	// content of note card when clicked
-	function handleNoteClick(evt) {
+	function handleEditClick(evt) {
 
 		var target = $(evt.target);
 		target = target.parents('.noteContainerContainer');
 
-		var url = "amp_detail.html?id=" + target.find('._id').html();
+		var url = "amp-edit.html?id=" + queryString["id"];
 		   window.location.href = url;
 
 	   }
 
-
-	</script> -->
-
+    </script>
 	</body>
 </html>
