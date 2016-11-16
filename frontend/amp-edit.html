@@ -285,12 +285,10 @@
         }
         if (queryString["id"] != null) {
             var ampDiv = $('.ampContainer');
-            console.log(ampDiv);
+            // console.log(ampDiv);
             $.get("/ampdetail?query=" + value, function(response){
                 var amp = response[0];
-                // ampDiv.find('._id').text(amp._id.toString());
                 ampDiv.find('#amp_model').val(amp.amp_model);
-                // newNoteDiv.find('.noteContainer').click(handleNoteClick);
                 ampDiv.find('#amp_manufacturer').val(amp.amp_manufacturer);
                 ampDiv.find('#amp_style').val(amp.amp_style);
                 ampDiv.find('#wattage').val(amp.wattage);
@@ -348,10 +346,11 @@
 			window.location.href = "/";
 		});
 
-		function editAmp(amp_model, amp_manufacturer, amp_style, wattage, features, image, video, foot_switchable, number_of_channels, midi_capable, has_clean, sounds_like_players, percussive, percussive_level_amount, feel_overall, feel_low_end, feel_high_end, feel_rating, compression_level, compression_level_amount, dynamic_feel_punch_vs_compression, easy_to_play, easy_to_play_amount, sound_good_low_volume, preferred_speaker_combination, best_music_genre_served, price_point_new, price_point_used, popularity, boutique, rarity, year_introduced, di_capable, power_scaling, has_variac, has_switchable_wattage, gain_rating, eq_frustration_level, house_friendly, overall_value_for_price_point, clarity, note_articulation, sparkle, fx_loop_serial, fx_loop_parallel, has_line_out, has_resonance_or_depth, eq_voicing, tone_stack) {
+		function editAmp(_id, amp_model, amp_manufacturer, amp_style, wattage, features, image, video, foot_switchable, number_of_channels, midi_capable, has_clean, sounds_like_players, percussive, percussive_level_amount, feel_overall, feel_low_end, feel_high_end, feel_rating, compression_level, compression_level_amount, dynamic_feel_punch_vs_compression, easy_to_play, easy_to_play_amount, sound_good_low_volume, preferred_speaker_combination, best_music_genre_served, price_point_new, price_point_used, popularity, boutique, rarity, year_introduced, di_capable, power_scaling, has_variac, has_switchable_wattage, gain_rating, eq_frustration_level, house_friendly, overall_value_for_price_point, clarity, note_articulation, sparkle, fx_loop_serial, fx_loop_parallel, has_line_out, has_resonance_or_depth, eq_voicing, tone_stack) {
 
 	            $.post("/edit_amp", {
-	            	amp_model: amp_model,
+					_id: _id,
+					amp_model: amp_model,
 	            	amp_manufacturer: amp_manufacturer,
 	            	amp_style: amp_style,
 	            	wattage: wattage,

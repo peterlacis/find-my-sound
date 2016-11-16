@@ -125,6 +125,7 @@ input {
 	border-bottom: 2px solid gray;
 	outline: none;
 	background-color: white;
+	width: 100%;
 }
 .input-group {
 	margin: 0 auto;
