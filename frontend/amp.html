@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<style>
+	@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+	@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+
+	</style>
+
 </head>
 
 <body>
@@ -25,20 +31,23 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="ampContainer">
-						<div class="amp_features"><input id="amp_model" cols="65" placeholder="Model" /></div>
-						<div class="amp_features"><input id="amp_manufacturer" placeholder="Brand"/></div></h3>
-						<div class="amp_features"><input id="amp_style" placeholder="Style (e.g. rock, metal, blues, country...)" /></div>
-						<div class="amp_features"><input id="wattage" placeholder="Wattage" /></div>
-						<div class="amp_features"><textarea id="features" rows="4" cols="65" placeholder="Features"></textarea></div>
-						<div class="amp_features"><input id="image" placeholder="Image" /></div>
-						<div class="amp_features"><input id="video" placeholder="Video Link" /></div>
-						<div class="amp_features">Foot Switchable? <input id="foot_switchable" type="radio" name="foot_switchable" value="true"> True <input id="foot_switchable" type="radio" name="foot_switchable" value="false"> False </div>
-						<div class="amp_features"><input id="number_of_channels" placeholder="Number of Channels" /></div>
-						<div class="amp_features">Midi Capable? <input id="midi_capable" type="radio" name="midi_capable" value="true"> True <input id="midi_capable" type="radio" name="midi_capable" value="false"> False </div>
-						<div class="amp_features">Has a Clean Channel? <input id="has_clean" type="radio" name="has_clean" value="true"> True <input id="has_clean" type="radio" name="has_clean" value="false"> False </div>
-						<div class="amp_features"><input id="sounds_like_players" placeholder="Players who would use this" /></div>
-						<div class="amp_features">Percussive? <input id="percussive" type="radio" name="percussive" value="true"> True <input id="percussive" type="radio" name="percussive" value="false"> False</div>
-						<div class="amp_features">How Percussive?<br>
+						<table class="table table-striped">
+							<tbody>
+
+						<tr><td><div class="amp_features"><input id="amp_model" cols="65" placeholder="Model" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="amp_manufacturer" placeholder="Brand"/></div></h3></td></tr>
+						<tr><td><div class="amp_features"><input id="amp_style" placeholder="Style (e.g. rock, metal, blues, country...)" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="wattage" placeholder="Wattage" /></div></td></tr>
+						<tr><td><div class="amp_features"><textarea id="features" rows="4" cols="65" placeholder="Features"></textarea></div></td></tr>
+						<tr><td><div class="amp_features"><input id="image" placeholder="Image" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="video" placeholder="Video Link" /></div></td></tr>
+						<tr><td><div class="amp_features">Foot Switchable? <input id="foot_switchable" type="radio" name="foot_switchable" value="true"> True <input id="foot_switchable" type="radio" name="foot_switchable" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features"><input id="number_of_channels" placeholder="Number of Channels" /></div></td></tr>
+						<tr><td><div class="amp_features">Midi Capable? <input id="midi_capable" type="radio" name="midi_capable" value="true"> True <input id="midi_capable" type="radio" name="midi_capable" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Has a Clean Channel? <input id="has_clean" type="radio" name="has_clean" value="true"> True <input id="has_clean" type="radio" name="has_clean" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features"><input id="sounds_like_players" placeholder="Players who would use this" /></div></td></tr>
+						<tr><td><div class="amp_features">Percussive? <input id="percussive" type="radio" name="percussive" value="true"> True <input id="percussive" type="radio" name="percussive" value="false"> False</div></td></tr>
+						<tr><td><div class="amp_features">How Percussive?<br>
 							<select id="percussive_level_amount">
 								<option value=""> - choose percussion level - </option>
 								<option value="1">1 - not percussive</option>
@@ -52,11 +61,11 @@
 								<option value="9">9</option>
 								<option value="10">10 - very percussive</option>
 							</select>
-						</div>
-						<div class="amp_features"><input id="feel_overall" placeholder="Overall Feel Description" /></div>
-						<div class="amp_features"><input id="feel_low_end" placeholder="Low end feel e.g. tight or loose" /></div>
-						<div class="amp_features"><input id="feel_high_end" placeholder="High end feel e.g. smooth or sharp" /></div>
-						<div class="amp_features">Feel rating:<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features"><input id="feel_overall" placeholder="Overall Feel Description" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="feel_low_end" placeholder="Low end feel e.g. tight or loose" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="feel_high_end" placeholder="High end feel e.g. smooth or sharp" /></div></td></tr>
+						<tr><td><div class="amp_features">Feel rating:<br>
 							<select id="feel_rating">
 								<option value=""> - choose feel rating - </option>
 								<option value="1">1 - loose</option>
@@ -70,9 +79,9 @@
 								<option value="9">9</option>
 								<option value="10">10 - tight</option>
 							</select>
-						</div>
-						<div class="amp_features"><input id="compression_level" placeholder="Compression Description" /></div>
-						<div class="amp_features">Compression level:<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features"><input id="compression_level" placeholder="Compression Description" /></div></td></tr>
+						<tr><td><div class="amp_features">Compression level:<br>
 							<select id="compression_level_amount">
 								<option value=""> - choose compression level - </option>
 								<option value="1">1 - not compressed</option>
@@ -86,11 +95,11 @@
 								<option value="9">9</option>
 								<option value="10">10 - very compressed</option>
 							</select>
-						</div>
+						</div></td></tr>
 
-						<div class="amp_features"><input id="dynamic_feel_punch_vs_compression" placeholder="Dynamic Feel - punch vs compression description" /></div>
-						<div class="amp_features">Easy to Play? <input id="easy_to_play" type="radio" name="easy_to_play" value="true"> True <input id="easy_to_play" type="radio" name="easy_to_play" value="false"> False </div>
-						<div class="amp_features">How easty to play?<br>
+						<tr><td><div class="amp_features"><input id="dynamic_feel_punch_vs_compression" placeholder="Dynamic Feel - punch vs compression description" /></div></td></tr>
+						<tr><td><div class="amp_features">Easy to Play? <input id="easy_to_play" type="radio" name="easy_to_play" value="true"> True <input id="easy_to_play" type="radio" name="easy_to_play" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">How easty to play?<br>
 							<select id="easy_to_play_amount">
 								<option value=""> - choose ease of play level - </option>
 								<option value="1">1 - difficult to play</option>
@@ -104,14 +113,14 @@
 								<option value="9">9</option>
 								<option value="10">10 - easy to play</option>
 							</select>
-						</div>
+						</div></td></tr>
 
-						<div class="amp_features">Sounds good at low volume? <input id="sound_good_low_volume" type="radio" name="sound_good_low_volume" value="true"> True <input id="sound_good_low_volume" type="radio" name="sound_good_low_volume" value="false"> False </div>
-						<div class="amp_features"><input id="preferred_speaker_combination" placeholder="Preferred spakers?" /></div>
-						<div class="amp_features"><input id="best_music_genre_served" placeholder="Genre served?" /></div>
-						<div class="amp_features"><input id="price_point_new" placeholder="Price NEW" /></div>
-						<div class="amp_features"><input id="price_point_used" placeholder="Price USED" /></div>
-						<div class="amp_features">How popular?<br>
+						<tr><td><div class="amp_features">Sounds good at low volume? <input id="sound_good_low_volume" type="radio" name="sound_good_low_volume" value="true"> True <input id="sound_good_low_volume" type="radio" name="sound_good_low_volume" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features"><input id="preferred_speaker_combination" placeholder="Preferred spakers?" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="best_music_genre_served" placeholder="Genre served?" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="price_point_new" placeholder="Price NEW" /></div></td></tr>
+						<tr><td><div class="amp_features"><input id="price_point_used" placeholder="Price USED" /></div></td></tr>
+						<tr><td><div class="amp_features">How popular?<br>
 								<select id="popularity">
 									<option value=""> - choose popularity level - </option>
 									<option value="1">1 - not popular</option>
@@ -125,9 +134,9 @@
 									<option value="9">9</option>
 									<option value="10">10 - very popular</option>
 								</select>
-						</div>
-						<div class="amp_features">Boutique Amp? <input id="boutique" type="radio" name="boutique" value="true"> True <input id="boutique" type="radio" name="boutique" value="false"> False </div>
-						<div class="amp_features">How rare is this amp?<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features">Boutique Amp? <input id="boutique" type="radio" name="boutique" value="true"> True <input id="boutique" type="radio" name="boutique" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">How rare is this amp?<br>
 								<select id="rarity">
 									<option value=""> - choose rarity level - </option>
 									<option value="1">1 - not rare</option>
@@ -141,13 +150,13 @@
 									<option value="9">9</option>
 									<option value="10">10 - very rare</option>
 								</select>
-						</div>
-						<div class="amp_features"><input id="year_introduced" placeholder="Year Introduced" /></div>
-						<div class="amp_features">D.I. Capable?<input id="di_capable" type="radio" name="di_capable" value="true"> True <input id="di_capable" type="radio" name="di_capable" value="false"> False </div>
-						<div class="amp_features">Has power scaling? <input id="power_scaling" type="radio" name="power_scaling" value="true"> True <input id="power_scaling" type="radio" name="power_scaling" value="false"> False </div>
-						<div class="amp_features">Has variac capability? <input id="has_variac" type="radio" name="has_variac" value="true"> True <input id="has_variac" type="radio" name="has_variac" value="false"> False </div>
-						<div class="amp_features">Has switchable wattage? <input id="has_switchable_wattage" type="radio" name="has_switchable_wattage" value="true"> True <input id="has_switchable_wattage" type="radio" name="has_switchable_wattage" value="false"> False </div>
-						<div class="amp_features">
+						</div></td></tr>
+						<tr><td><div class="amp_features"><input id="year_introduced" placeholder="Year Introduced" /></div></td></tr>
+						<tr><td><div class="amp_features">D.I. Capable?<input id="di_capable" type="radio" name="di_capable" value="true"> True <input id="di_capable" type="radio" name="di_capable" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Has power scaling? <input id="power_scaling" type="radio" name="power_scaling" value="true"> True <input id="power_scaling" type="radio" name="power_scaling" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Has variac capability? <input id="has_variac" type="radio" name="has_variac" value="true"> True <input id="has_variac" type="radio" name="has_variac" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Has switchable wattage? <input id="has_switchable_wattage" type="radio" name="has_switchable_wattage" value="true"> True <input id="has_switchable_wattage" type="radio" name="has_switchable_wattage" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">
 							<select id="gain_rating">Gain rating:<br>
 								<option value=""> - choose gain rating - </option>
 								<option value="1">1 - clean amp</option>
@@ -161,8 +170,8 @@
 								<option value="9">9</option>
 								<option value="10">10 - face melter</option>
 							</select>
-						</div>
-						<div class="amp_features">EQ frustration level:<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features">EQ frustration level:<br>
 							<select id="eq_frustration_level">
 								<option value=""> - choose how frustrating the amp is to EQ - </option>
 								<option value="1">1 - easy to EQ</option>
@@ -176,9 +185,9 @@
 								<option value="9">9</option>
 								<option value="10">10 - Mesa Boogie Mark Series</option>
 							</select>
-						</div>
-						<div class="amp_features">House friendly? <input id="house_friendly" type="radio" name="house_friendly" value="true"> True <input id="house_friendly" type="radio" name="house_friendly" value="false"> False </div>
-						<div class="amp_features">Overall value for price point?<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features">House friendly? <input id="house_friendly" type="radio" name="house_friendly" value="true"> True <input id="house_friendly" type="radio" name="house_friendly" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Overall value for price point?<br>
 							<select id="overall_value_for_price_point">
 								<option value=""> - choose value level for price point - </option>
 								<option value="1">1 - poor value</option>
@@ -192,8 +201,8 @@
 								<option value="9">9</option>
 								<option value="10">10 - great value</option>
 							</select>
-						</div>
-						<div class="amp_features">Clarity:<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features">Clarity:<br>
 							<select id="clarity">
 								<option value=""> - choose clarity level - </option>
 								<option value="1">1 - super muddy</option>
@@ -207,8 +216,8 @@
 								<option value="9">9</option>
 								<option value="10">10 - super clear</option>
 							</select>
-						</div>
-						<div class="amp_features">Note articulation amount:<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features">Note articulation amount:<br>
 							<select id="note_articulation">
 								<option value=""> - choose how articulate - </option>
 								<option value="1">1 - super mushy</option>
@@ -222,8 +231,8 @@
 								<option value="9">9</option>
 								<option value="10">10 - super articulate</option>
 							</select>
-						</div>
-						<div class="amp_features">Sparkle:<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features">Sparkle:<br>
 							<select id="sparkle">
 								<option value=""> - choose sparkle level - </option>
 								<option value="1">1 - no sparkle</option>
@@ -237,13 +246,13 @@
 								<option value="9">9</option>
 								<option value="10">10 - super sparkle</option>
 							</select>
-						</div>
-						<div class="amp_features">Has Serial Effects Loop? <input id="fx_loop_serial" type="radio" name="fx_loop_serial" value="true"> True <input id="fx_loop_serial" type="radio" name="fx_loop_serial" value="false"> False </div>
-						<div class="amp_features">Has Parallel Effects Loop? <input id="fx_loop_parallel" type="radio" name="fx_loop_parallel" value="true"> True <input id="fx_loop_parallel" type="radio" name="fx_loop_parallel" value="false"> False </div>
-						<div class="amp_features">Has Line Out? <input id="has_line_out" type="radio" name="has_line_out" value="true"> True <input id="has_line_out" type="radio" name="has_line_out" value="false"> False </div>
-						<div class="amp_features">Has Resonance or Depth Controls? <input id="has_resonance_or_depth" type="radio" name="has_resonance_or_depth" value="true"> True <input id="has_resonance_or_depth" type="radio" name="has_resonance_or_depth" value="false"> False </div>
-						<div class="amp_features"><input id="eq_voicing" placeholder="EQ Voicing description" /></div>
-						<div class="amp_features">Tone stack:<br>
+						</div></td></tr>
+						<tr><td><div class="amp_features">Has Serial Effects Loop? <input id="fx_loop_serial" type="radio" name="fx_loop_serial" value="true"> True <input id="fx_loop_serial" type="radio" name="fx_loop_serial" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Has Parallel Effects Loop? <input id="fx_loop_parallel" type="radio" name="fx_loop_parallel" value="true"> True <input id="fx_loop_parallel" type="radio" name="fx_loop_parallel" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Has Line Out? <input id="has_line_out" type="radio" name="has_line_out" value="true"> True <input id="has_line_out" type="radio" name="has_line_out" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features">Has Resonance or Depth Controls? <input id="has_resonance_or_depth" type="radio" name="has_resonance_or_depth" value="true"> True <input id="has_resonance_or_depth" type="radio" name="has_resonance_or_depth" value="false"> False </div></td></tr>
+						<tr><td><div class="amp_features"><input id="eq_voicing" placeholder="EQ Voicing description" /></div></td></tr>
+						<tr><td><div class="amp_features">Tone stack:<br>
 							<select id="tone_stack">
 								<option value=""> - choose tone stack - </option>
 								<option value="Fender">Fender</option>
@@ -251,9 +260,11 @@
 								<option value="Vox">Vox</option>
 								<option value="Other">Other</option>
 							</select>
-						</div>
+						</div></td></tr>
 
-						<button type=button id="submit_amp" class="btn btn-default"> Submit New Amp </button>
+						<tr><td><button type=button id="submit_amp" class="btn btn-default"> Submit New Amp </button></td></tr>
+					</tbody>
+				</table>
 					</div>
 				</div>
 			</div>

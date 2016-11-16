@@ -1,7 +1,7 @@
 .row {
-	font-family: 'Proza Libre', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	border-radius: 4px;
-	padding: 20px;
+	padding-bottom: 10px;
 }
 body {
 	background-color: #333333;
@@ -10,12 +10,12 @@ body {
 }
 .container {
 	/*background-color: #B25400;*/
-	background-color: #666666;
+	background-color: #333333;
 	padding: 20px;
 }
 .header {
 	text-align: center;
-	background-color: #999999;
+	background-color: #ffffff;
 	border-bottom: 5px solid black;
 }
 #editor {
@@ -24,7 +24,14 @@ body {
 }
 h1 {
 	font-size: 58px;
-	font-weight: bold;
+	font-family: 'Covered By Your Grace';
+	/*font-weight: bold;*/
+}
+
+h2 {
+	font-size: 38px;
+	font-family: 'Covered By Your Grace';
+	/*font-weight: bold;*/
 }
 #submit_amp {
 	background-color: #333333;
@@ -75,7 +82,7 @@ h1 {
 	background-color: #333333;
 }
 .noteContainer {
-	background-color: #666666;
+	background-color: #ffffff;
 	padding: 10px;
 	border: 2px solid #;
 	border-radius: 4px;
@@ -105,7 +112,7 @@ h1 {
 	background-color: #333333;
 }
 .ampContainer {
-	background: #666666;
+	background: #ffffff;
 	padding: 40px;
 	border-radius: 4px;
 }

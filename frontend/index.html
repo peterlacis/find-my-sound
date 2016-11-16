@@ -9,6 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css"/>
 		<script src="./index-front.js"></script>
+		<style>
+		@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+		@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+
+		</style>
 
 	</head>
 	<body>
@@ -16,17 +21,32 @@
 			<div class="header navbar-fixed-top">
 				<div class="row">
 					<div class="NavButtonDiv col-xs-3">
-						<div id="homeAmpButton"><img class="ampSubmitLogo" src="./assets/amp.jpg"/ title="home"></div>
+						<div id="homeAmpButton"><img class="ampSubmitLogo" src="./assets/amp.jpg"/ title="home"><h2>View All Amps</h2></div>
 					</div>
 					<div class="titleDiv col-xs-6">
 						<h1>FIND MY SOUND</h1>
+						<div class="row searchRow">
+							<div id="custom-search-input">
+				                <div class="input-group col-md-3">
+				                	<form id="search-form">
+				                        <span class="input-group-btn">
+				                            <input type="text" class="search-query form-control" placeholder="Search all amps" />
+				                            <button id="searchButton" class="btn btn-danger" type="submit">
+				                                <span class=" glyphicon glyphicon-search"></span>
+				                            </button>
+				                        </span>
+				                	</form>
+				                </div>
+				            </div>
+						</div>
 					</div>
 					<div class="ampButtonDiv col-xs-3">
-						<div id="homeAddAmp"><img class="ampSubmitLogo" src="./assets/amp2.jpg" title="Add an Amp"/></div>
+						<div id="homeAddAmp"><img class="ampSubmitLogo" src="./assets/amp2.jpg" title="Add an Amp"/><h2>Add an Amp</h2></div>
 					</div>
 				</div>
 			</div>
-		<div class="row searchRow">
+
+		<!-- <div class="row searchRow">
 			<div id="custom-search-input">
                 <div class="input-group col-md-3">
                 	<form id="search-form">
@@ -39,7 +59,8 @@
                 	</form>
                 </div>
             </div>
-		</div>
+		</div> -->
+
 		<div class="container">
 			<div class="row contentRow grid">
 

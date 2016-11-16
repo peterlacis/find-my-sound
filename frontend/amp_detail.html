@@ -9,6 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css"/>
 		<script src="./index-front.js"></script>
+		<style>
+		@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+		@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+
+		</style>
 
 	</head>
 	<body>
@@ -16,13 +21,13 @@
 			<div class="header navbar-fixed-top">
 				<div class="row">
 					<div class="NavButtonDiv col-xs-3">
-						<div id="homeAmpButton"><img class="ampSubmitLogo" src="./assets/amp.jpg"/ title="home"></div>
+						<div id="homeAmpButton"><img class="ampSubmitLogo" src="./assets/amp.jpg"/ title="home"><h2>View All Amps</h2></div>
 					</div>
 					<div class="titleDiv col-xs-6">
 						<h1>AMP DETAIL</h1>
 					</div>
 					<div class="ampButtonDiv col-xs-3">
-						<div id="homeAddAmp"><img class="ampSubmitLogo" src="./assets/amp2.jpg" title="Add an Amp"/></div>
+						<div id="homeAddAmp"><img class="ampSubmitLogo" src="./assets/amp2.jpg" title="Add an Amp"/><h2>Add an Amp</h2></div>
 					</div>
 				</div>
 			</div>
@@ -47,16 +52,68 @@
 				<p id="searchResults"></p>
 
 				<!-- This is the main view of the initial search results -->
-				<div id="detail" class="col-lg-6 col-sm-12 noteContainerContainer grid-item" >
+				<div id="detail" class="col-lg-12 col-sm-12 noteContainerContainer grid-item" >
 					<div class="noteContainer">
+						<table class="table table-striped">
+							<tbody>
+
 						<!-- <h4 class="_id">ID:</h3> -->
-						<h4 class="amp_model">Model:</h3>
-						<h4 class="amp_manufacturer">Manufacturer:</h5>
-						<h4 class="amp_style">Style:</h5>
-						<h4 class="wattage">Wattage:</h5>
-						<h4 class="image"></h5>
-						<div class="features">Features:</div>
+						<tr><td><h4 class=""></h4></td></tr>
+						<tr><td><h4 class="image"></h4></td></tr>
+
+						<tr><td><h4 class="amp_model"></h4></td></tr>
+						<tr><td><h4 class="amp_manufacturer"></h4></td></tr>
+						<tr><td><h5 class="amp_style"></h5></td></tr>
+						<tr><td><h6 class="wattage"></h6></td></tr>
+						<tr><td><h4 class="video"></h4></td></tr>
+						<tr><td><h4 class="foot_switchable"></h4></td></tr>
+						<tr><td><h4 class="number_of_channels"></h4></td></tr>
+						<tr><td><h4 class="midi_capable"></h4></td></tr>
+						<tr><td><h4 class="has_clean"></h4></td></tr>
+						<tr><td><h4 class="sounds_like_players"></h4></td></tr>
+						<tr><td><h4 class="percussive"></h4></td></tr>
+						<tr><td><h4 class="percussive_level_amount"></h4></td></tr>
+						<tr><td><h4 class="feel_overall"></h4></td></tr>
+						<tr><td><h4 class="feel_low_end"></h4></td></tr>
+						<tr><td><h4 class="feel_high_end"></h4></td></tr>
+						<tr><td><h4 class="feel_rating"></h4></td></tr>
+						<tr><td><h4 class="compression_level"></h4></td></tr>
+						<tr><td><h4 class="compression_level_amount"></h4></td></tr>
+						<tr><td><h4 class="dynamic_feel_punch_vs_compression"></h4></td></tr>
+						<tr><td><h4 class="easy_to_play"></h4></td></tr>
+						<tr><td><h4 class="easy_to_play_amount"></h4></td></tr>
+						<tr><td><h4 class="sound_good_low_volume"></h4></td></tr>
+						<tr><td><h4 class="preferred_speaker_combination"></h4></td></tr>
+						<tr><td><h4 class="best_music_genre_served"></h4></td></tr>
+						<tr><td><h4 class="price_point_new"></h4></td></tr>
+						<tr><td><h4 class="price_point_used"></h4></td></tr>
+						<tr><td><h4 class="popularity"></h4></td></tr>
+						<tr><td><h4 class="boutique"></h4></td></tr>
+						<tr><td><h4 class="rarity"></h4></td></tr>
+						<tr><td><h4 class="year_introduced"></h4></td></tr>
+						<tr><td><h4 class="di_capable"></h4></td></tr>
+						<tr><td><h4 class="power_scaling"></h4></td></tr>
+						<tr><td><h4 class="has_variac"></h4></td></tr>
+						<tr><td><h4 class="has_switchable_wattage"></h4></td></tr>
+						<tr><td><h4 class="gain_rating"></h4></td></tr>
+						<tr><td><h4 class="eq_frustration_level"></h4></td></tr>
+						<tr><td><h4 class="house_friendly"></h4></td></tr>
+						<tr><td><h4 class="overall_value_for_price_point"></h4></td></tr>
+						<tr><td><h4 class="clarity"></h4></td></tr>
+						<tr><td><h4 class="note_articulation"></h4></td></tr>
+						<tr><td><h4 class="sparkle"></h4></td></tr>
+						<tr><td><h4 class="fx_loop_serial"></h4></td></tr>
+						<tr><td><h4 class="fx_loop_parallel"></h4></td></tr>
+						<tr><td><h4 class="has_line_out"></h4></td></tr>
+						<tr><td><h4 class="has_resonance_or_depth"></h4></td></tr>
+						<tr><td><h4 class="eq_voicing"></h4></td></tr>
+						<tr><td><h4 class="tone_stack"></h4></td></tr>
+
+
+						<tr><td><div class="features">Features:</div></td></tr>
 						<!-- <button type=button id="edit_amp" class="btn btn-default"> Edit Amp </button> -->
+						</tbody>
+					</table>
 
 
 		 			</div>
@@ -106,6 +163,50 @@
                 ampDiv.find('.wattage').text("Wattage: " + amp.wattage);
                 ampDiv.find('.features').text("Features: " + amp.features);
                 ampDiv.find('.image').html("<img src='" + amp.image + "'>");
+				ampDiv.find('.video').html(amp.video);
+				ampDiv.find('.foot_switchable').text("Foot Switchable: "+ amp.foot_switchable);
+				ampDiv.find('.number_of_channels').text("Number of Channels: " + amp.number_of_channels);
+				ampDiv.find('.midi_capable').text("Midi Capable: " + amp.midi_capable);
+				ampDiv.find('.has_clean').text("Has Clean: " + amp.has_clean);
+				ampDiv.find('.sounds_like_players').text("Sounds like which players: " + amp.sounds_like_players);
+				ampDiv.find('.percussive').text("Percussive: " + amp.percussive);
+				ampDiv.find('.percussive_level_amount').text("Percussive Level Amount: " + amp.percussive_level_amount);
+				ampDiv.find('.feel_overall').text("Overall Feel: " + amp.feel_overall);
+				ampDiv.find('.feel_low_end').text("Low End Feel: " + amp.feel_low_end);
+				ampDiv.find('.feel_high_end').text("High End Feel: " + amp.feel_high_end);
+				ampDiv.find('.feel_rating').text("Feel Rating: " + amp.feel_rating);
+				ampDiv.find('.compression_level').text("Compression Level: " + amp.compression_level);
+				ampDiv.find('.compression_level_amount').text("Compression Level Amount: " + amp.compression_level_amount);
+				ampDiv.find('.dynamic_feel_punch_vs_compression').text("Dynamic Feel - Punch vs. Compression: " + amp.dynamic_feel_punch_vs_compression);
+				ampDiv.find('.easy_to_play').text("Easy to Play: " + amp.easy_to_play);
+				ampDiv.find('.easy_to_play_amount').text("Easy to Play Amount: " + amp.easy_to_play_amount);
+				ampDiv.find('.sound_good_low_volume').text("Sounds Good at Low Volue: " + amp.sound_good_low_volume);
+				ampDiv.find('.preferred_speaker_combination').text("Preferred Speaker Combination: " + amp.preferred_speaker_combination);
+				ampDiv.find('.best_music_genre_served').text("Best Music Genre Served" + amp.best_music_genre_served);
+				ampDiv.find('.price_point_new').text("Price Point New: " + amp.price_point_new);
+				ampDiv.find('.price_point_used').text("Price Point Used: " + amp.price_point_used);
+				ampDiv.find('.popularity').text("Popularity: " + amp.popularity);
+				ampDiv.find('.boutique').text("Boutique: " + amp.boutique);
+				ampDiv.find('.rarity').text("Rarity: " + amp.rarity);
+				ampDiv.find('.year_introduced').text("Year Introduced: " + amp.year_introduced);
+				ampDiv.find('.di_capable').text("D.I. Capable: " + amp.di_capable);
+				ampDiv.find('.power_scaling').text("Power Scaling: " + amp.power_scaling);
+				ampDiv.find('.has_variac').text("Variac: " + amp.has_variac);
+				ampDiv.find('.has_switchable_wattage').text("Switchable Wattage: " + amp.has_switchable_wattage);
+				ampDiv.find('.gain_rating').text("Gain Rating: " + amp.gain_rating);
+				ampDiv.find('.eq_frustration_level').text("EQ Frustration Level: " + amp.eq_frustration_level);
+				ampDiv.find('.house_friendly').text("House Friendly: " + amp.house_friendly);
+				ampDiv.find('.overall_value_for_price_point').text("Value for Price Point: " + amp.overall_value_for_price_point);
+				ampDiv.find('.clarity').text("Clarity: " + amp.clarity);
+				ampDiv.find('.note_articulation').text("Note Articulation: " + amp.note_articulation);
+				ampDiv.find('.sparkle').text("Sparkle: " + amp.sparkle);
+				ampDiv.find('.fx_loop_serial').text("Serial Effects Loop: " + amp.fx_loop_serial);
+				ampDiv.find('.fx_loop_parallel').text("Parallel Effects Loop: " + amp.fx_loop_parallel);
+				ampDiv.find('.has_line_out').text("Line Out: " + amp.has_line_out);
+				ampDiv.find('.has_resonance_or_depth').text("Resonance or Depth Control: " + amp.has_resonance_or_depth);
+				ampDiv.find('.eq_voicing').text("EQ Voicing Description: " + amp.eq_voicing);
+				ampDiv.find('.tone_stack').text("Tone Stack: " + amp.tone_stack)
+
 				});
         }
     });
