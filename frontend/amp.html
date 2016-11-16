@@ -25,12 +25,233 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="ampContainer">
-						<div class="amp_details"><input id="amp_model" placeholder="Model" /></div>
-						<div class="amp_details"><input id="amp_manufacturer" placeholder="Manufacturer"/></div></h3>
-						<div class="amp_details"><input id="amp_style" placeholder="Style (e.g. rock, metal, blues, country...)" /></div>
-						<div class="amp_details"><input id="wattage" placeholder="Wattage" /></div>
+						<div class="amp_features"><input id="amp_model" cols="65" placeholder="Model" /></div>
+						<div class="amp_features"><input id="amp_manufacturer" placeholder="Brand"/></div></h3>
+						<div class="amp_features"><input id="amp_style" placeholder="Style (e.g. rock, metal, blues, country...)" /></div>
+						<div class="amp_features"><input id="wattage" placeholder="Wattage" /></div>
 						<div class="amp_features"><textarea id="features" rows="4" cols="65" placeholder="Features"></textarea></div>
 						<div class="amp_features"><input id="image" placeholder="Image" /></div>
+						<div class="amp_features"><input id="video" placeholder="Video Link" /></div>
+						<div class="amp_features">Foot Switchable? <input id="foot_switchable" type="radio" name="foot_switchable" value="true"> True <input id="foot_switchable" type="radio" name="foot_switchable" value="false"> False </div>
+						<div class="amp_features"><input id="number_of_channels" placeholder="Number of Channels" /></div>
+						<div class="amp_features">Midi Capable? <input id="midi_capable" type="radio" name="midi_capable" value="true"> True <input id="midi_capable" type="radio" name="midi_capable" value="false"> False </div>
+						<div class="amp_features">Has a Clean Channel? <input id="has_clean" type="radio" name="has_clean" value="true"> True <input id="has_clean" type="radio" name="has_clean" value="false"> False </div>
+						<div class="amp_features"><input id="sounds_like_players" placeholder="Players who would use this" /></div>
+						<div class="amp_features">Percussive? <input id="percussive" type="radio" name="percussive" value="true"> True <input id="percussive" type="radio" name="percussive" value="false"> False</div>
+						<div class="amp_features">How Percussive?<br>
+							<select id="percussive_level_amount">
+								<option value=""> - choose percussion level - </option>
+								<option value="1">1 - not percussive</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - very percussive</option>
+							</select>
+						</div>
+						<div class="amp_features"><input id="feel_overall" placeholder="Overall Feel Description" /></div>
+						<div class="amp_features"><input id="feel_low_end" placeholder="Low end feel e.g. tight or loose" /></div>
+						<div class="amp_features"><input id="feel_high_end" placeholder="High end feel e.g. smooth or sharp" /></div>
+						<div class="amp_features">Feel rating:<br>
+							<select id="feel_rating">
+								<option value=""> - choose feel rating - </option>
+								<option value="1">1 - loose</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - tight</option>
+							</select>
+						</div>
+						<div class="amp_features"><input id="compression_level" placeholder="Compression Description" /></div>
+						<div class="amp_features">Compression level:<br>
+							<select id="compression_level_amount">
+								<option value=""> - choose compression level - </option>
+								<option value="1">1 - not compressed</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - very compressed</option>
+							</select>
+						</div>
+
+						<div class="amp_features"><input id="dynamic_feel_punch_vs_compression" placeholder="Dynamic Feel - punch vs compression description" /></div>
+						<div class="amp_features">Easy to Play? <input id="easy_to_play" type="radio" name="easy_to_play" value="true"> True <input id="easy_to_play" type="radio" name="easy_to_play" value="false"> False </div>
+						<div class="amp_features">How easty to play?<br>
+							<select id="easy_to_play_amount">
+								<option value=""> - choose ease of play level - </option>
+								<option value="1">1 - difficult to play</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - easy to play</option>
+							</select>
+						</div>
+
+						<div class="amp_features">Sounds good at low volume? <input id="sound_good_low_volume" type="radio" name="sound_good_low_volume" value="true"> True <input id="sound_good_low_volume" type="radio" name="sound_good_low_volume" value="false"> False </div>
+						<div class="amp_features"><input id="preferred_speaker_combination" placeholder="Preferred spakers?" /></div>
+						<div class="amp_features"><input id="best_music_genre_served" placeholder="Genre served?" /></div>
+						<div class="amp_features"><input id="price_point_new" placeholder="Price NEW" /></div>
+						<div class="amp_features"><input id="price_point_used" placeholder="Price USED" /></div>
+						<div class="amp_features">How popular?<br>
+								<select id="popularity">
+									<option value=""> - choose popularity level - </option>
+									<option value="1">1 - not popular</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10 - very popular</option>
+								</select>
+						</div>
+						<div class="amp_features">Boutique Amp? <input id="boutique" type="radio" name="boutique" value="true"> True <input id="boutique" type="radio" name="boutique" value="false"> False </div>
+						<div class="amp_features">How rare is this amp?<br>
+								<select id="rarity">
+									<option value=""> - choose rarity level - </option>
+									<option value="1">1 - not rare</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10 - very rare</option>
+								</select>
+						</div>
+						<div class="amp_features"><input id="year_introduced" placeholder="Year Introduced" /></div>
+						<div class="amp_features">D.I. Capable?<input id="di_capable" type="radio" name="di_capable" value="true"> True <input id="di_capable" type="radio" name="di_capable" value="false"> False </div>
+						<div class="amp_features">Has power scaling? <input id="power_scaling" type="radio" name="power_scaling" value="true"> True <input id="power_scaling" type="radio" name="power_scaling" value="false"> False </div>
+						<div class="amp_features">Has variac capability? <input id="has_variac" type="radio" name="has_variac" value="true"> True <input id="has_variac" type="radio" name="has_variac" value="false"> False </div>
+						<div class="amp_features">Has switchable wattage? <input id="has_switchable_wattage" type="radio" name="has_switchable_wattage" value="true"> True <input id="has_switchable_wattage" type="radio" name="has_switchable_wattage" value="false"> False </div>
+						<div class="amp_features">
+							<select id="gain_rating">Gain rating:<br>
+								<option value=""> - choose gain rating - </option>
+								<option value="1">1 - clean amp</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - face melter</option>
+							</select>
+						</div>
+						<div class="amp_features">EQ frustration level:<br>
+							<select id="eq_frustration_level">
+								<option value=""> - choose how frustrating the amp is to EQ - </option>
+								<option value="1">1 - easy to EQ</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - Mesa Boogie Mark Series</option>
+							</select>
+						</div>
+						<div class="amp_features">House friendly? <input id="house_friendly" type="radio" name="house_friendly" value="true"> True <input id="house_friendly" type="radio" name="house_friendly" value="false"> False </div>
+						<div class="amp_features">Overall value for price point?<br>
+							<select id="overall_value_for_price_point">
+								<option value=""> - choose value level for price point - </option>
+								<option value="1">1 - poor value</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - great value</option>
+							</select>
+						</div>
+						<div class="amp_features">Clarity:<br>
+							<select id="clarity">
+								<option value=""> - choose clarity level - </option>
+								<option value="1">1 - super muddy</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - super clear</option>
+							</select>
+						</div>
+						<div class="amp_features">Note articulation amount:<br>
+							<select id="note_articulation">
+								<option value=""> - choose how articulate - </option>
+								<option value="1">1 - super mushy</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - super articulate</option>
+							</select>
+						</div>
+						<div class="amp_features">Sparkle:<br>
+							<select id="sparkle">
+								<option value=""> - choose sparkle level - </option>
+								<option value="1">1 - no sparkle</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10 - super sparkle</option>
+							</select>
+						</div>
+						<div class="amp_features">Has Serial Effects Loop? <input id="fx_loop_serial" type="radio" name="fx_loop_serial" value="true"> True <input id="fx_loop_serial" type="radio" name="fx_loop_serial" value="false"> False </div>
+						<div class="amp_features">Has Parallel Effects Loop? <input id="fx_loop_parallel" type="radio" name="fx_loop_parallel" value="true"> True <input id="fx_loop_parallel" type="radio" name="fx_loop_parallel" value="false"> False </div>
+						<div class="amp_features">Has Line Out? <input id="has_line_out" type="radio" name="has_line_out" value="true"> True <input id="has_line_out" type="radio" name="has_line_out" value="false"> False </div>
+						<div class="amp_features">Has Resonance or Depth Controls? <input id="has_resonance_or_depth" type="radio" name="has_resonance_or_depth" value="true"> True <input id="has_resonance_or_depth" type="radio" name="has_resonance_or_depth" value="false"> False </div>
+						<div class="amp_features"><input id="eq_voicing" placeholder="EQ Voicing description" /></div>
+						<div class="amp_features">Tone stack:<br>
+							<select id="tone_stack">
+								<option value=""> - choose tone stack - </option>
+								<option value="Fender">Fender</option>
+								<option value="Marshall">Marshall</option>
+								<option value="Vox">Vox</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
 
 						<button type=button id="submit_amp" class="btn btn-default"> Submit New Amp </button>
 					</div>
@@ -46,7 +267,7 @@
 			window.location.href = "/";
 		});
 
-		function addAmp(amp_model, amp_manufacturer, amp_style, wattage, features, image) {
+		function addAmp(amp_model, amp_manufacturer, amp_style, wattage, features, image, video, foot_switchable, number_of_channels, midi_capable, has_clean, sounds_like_players, percussive, percussive_level_amount, feel_overall, feel_low_end, feel_high_end, feel_rating, compression_level, compression_level_amount, dynamic_feel_punch_vs_compression, easy_to_play, easy_to_play_amount, sound_good_low_volume, preferred_speaker_combination, best_music_genre_served, price_point_new, price_point_used, popularity, boutique, rarity, year_introduced, di_capable, power_scaling, has_variac, has_switchable_wattage, gain_rating, eq_frustration_level, house_friendly, overall_value_for_price_point, clarity, note_articulation, sparkle, fx_loop_serial, fx_loop_parallel, has_line_out, has_resonance_or_depth, eq_voicing, tone_stack) {
             if (!wattage) {
             	wattage = "";
             }
@@ -63,7 +284,51 @@
 	            	amp_style: amp_style,
 	            	wattage: wattage,
 	            	features: features,
-					image: image
+					image: image,
+					video: video,
+					foot_switchable: foot_switchable,
+					number_of_channels: number_of_channels,
+					midi_capable: midi_capable,
+					has_clean: has_clean,
+					sounds_like_players: sounds_like_players,
+					percussive: percussive,
+					percussive_level_amount: percussive_level_amount,
+					feel_overall: feel_overall,
+					feel_low_end: feel_low_end,
+					feel_high_end: feel_high_end,
+					feel_rating: feel_rating,
+					compression_level: compression_level,
+					compression_level_amount: compression_level_amount,
+					dynamic_feel_punch_vs_compression: dynamic_feel_punch_vs_compression,
+					easy_to_play: easy_to_play,
+					easy_to_play_amount: easy_to_play_amount,
+					sound_good_low_volume: sound_good_low_volume,
+					preferred_speaker_combination: preferred_speaker_combination,
+					best_music_genre_served: best_music_genre_served,
+					price_point_new: price_point_new,
+					price_point_used: price_point_used,
+					popularity: popularity,
+					boutique: boutique,
+					rarity: rarity,
+					year_introduced: year_introduced,
+					di_capable: di_capable,
+					power_scaling: power_scaling,
+					has_variac: has_variac,
+					has_switchable_wattage: has_switchable_wattage,
+					gain_rating: gain_rating,
+					eq_frustration_level: eq_frustration_level,
+					house_friendly: house_friendly,
+					overall_value_for_price_point: overall_value_for_price_point,
+					clarity: clarity,
+					note_articulation: note_articulation,
+					sparkle: sparkle,
+					fx_loop_serial: fx_loop_serial,
+					fx_loop_parallel: fx_loop_parallel,
+					has_line_out: has_line_out,
+					has_resonance_or_depth: has_resonance_or_depth,
+					eq_voicing: eq_voicing,
+					tone_stack: tone_stack
+
 	            }, function(response) {
 	            	window.location.href = "/";
 	            });
@@ -77,7 +342,50 @@
             	$("#amp_style").val(),
             	$("#wattage").val(),
 				$("#features").val(),
-				$("#image").val()
+				$("#image").val(),
+				$("#video").val(),
+				$("#foot_switchable").val(),
+				$("#number_of_channels").val(),
+				$("#midi_capable").val(),
+				$("#has_clean").val(),
+				$("#sounds_like_players").val(),
+				$("#percussive").val(),
+				$("#percussive_level_amount").val(),
+				$("#feel_overall").val(),
+				$("#feel_low_end").val(),
+				$("#feel_high_end").val(),
+				$("#feel_rating").val(),
+				$("#compression_level").val(),
+				$("#compression_level_amount").val(),
+				$("#dynamic_feel_punch_vs_compression").val(),
+				$("#easy_to_play").val(),
+				$("#easy_to_play_amount").val(),
+				$("#sound_good_low_volume").val(),
+				$("#preferred_speaker_combination").val(),
+				$("#best_music_genre_served").val(),
+				$("#price_point_new").val(),
+				$("#price_point_used").val(),
+				$("#popularity").val(),
+				$("#boutique").val(),
+				$("#rarity").val(),
+				$("#year_introduced").val(),
+				$("#di_capable").val(),
+				$("#power_scaling").val(),
+				$("#has_variac").val(),
+				$("#has_switchable_wattage").val(),
+				$("#gain_rating").val(),
+				$("#eq_frustration_level").val(),
+				$("#house_friendly").val(),
+				$("#overall_value_for_price_point").val(),
+				$("#clarity").val(),
+				$("#note_articulation").val(),
+				$("#sparkle").val(),
+				$("#fx_loop_serial").val(),
+				$("#fx_loop_parallel").val(),
+				$("#has_line_out").val(),
+				$("#has_resonance_or_depth").val(),
+				$("#eq_voicing").val(),
+				$("#tone_stack").val()
 			);
         });
 	});

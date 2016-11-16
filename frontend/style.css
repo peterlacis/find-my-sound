@@ -135,7 +135,14 @@ input {
 	font-size: 23px;
 	font-color: #ffffff;
 }
-#amp_description {
+
+.amp_features {
+	margin: 10px 0;
+	width: 500px;
+	font-size: 18px;
+	font-color: #ffffff;
+}
+.amp_description {
 	margin: 10px 0;
 	font-size: 23px;
 }
