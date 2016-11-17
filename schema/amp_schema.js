@@ -5,6 +5,7 @@ AmpSchema = {
     wattage: Number,
     features: String,
     image: String,
+    video: String,
     foot_switchable: Boolean,
     number_of_channels: Number,
     midi_capable: Boolean,

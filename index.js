@@ -58,7 +58,12 @@ app.get("/amps", (req, res) => {
 				{"amp_style":new RegExp(inputArr[0],'i')},
 				{"wattage": parseInt(inputArr[0]) || -1 },
 				{"features":new RegExp(inputArr[0],'i')},
-				{"image":new RegExp(inputArr[0],'i')},
+				{"best_music_genre_served":new RegExp(inputArr[0],'i')},
+				{"sounds_like_players":new RegExp(inputArr[0],'i')},
+				{"price_point_new":parseInt(inputArr[0]) || -1 },
+				{"price_point_used":parseInt(inputArr[0]) || -1 },
+
+
 				// {"_id": inputArr[0]}
 
 			]

@@ -10,12 +10,61 @@
 		<link rel="stylesheet" href="style.css"/>
 		<script src="./index-front.js"></script>
 		<style>
-		@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
-		@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+			@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+			@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
+			<!-- These are example styles. You can modify to fit the listings to your site -->
 
-		</style>
-
-	</head>
+			 .reverb-embedded-listings {
+			    list-style-type: none !important;
+			    float: left;
+			  }
+			  .reverb-embedded-listing {
+			    position: relative;
+			    border: 1px solid #ddd;
+			    border-radius: 0.25em;
+			    box-shadow: 2px 2px 1px #f9f9f9;
+			    width: 200px;
+			    float: left;
+			    margin-right: 1em;
+			    margin-bottom: 1em;
+			    font-family: "Arial", "Verdana", sans-serif;
+			    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+			    list-style-type: none;
+			  }
+			  .reverb-embedded-listing a {
+			    text-decoration: none;
+			    color: #0080a5;
+			  }
+			  .reverb-embedded-listing-info {
+			    border-top: 1px solid #ddd;
+			    padding: 1em;
+			    height: 5em;
+			  }
+			  .reverb-embedded-listing-title {
+			    display: block;
+			    max-height: 38px;
+			    color: #6f6f6f;
+			    font-size: 1.25rem;
+			    font-weight: bold;
+			    overflow: hidden;
+			  }
+			  .reverb-embedded-listing-price {
+			    position: absolute;
+			    padding: 0.75rem;
+			    top: 0;
+			    right: 0;
+			    font-weight: bold;
+			    background-color: #D27900;
+			    color: white;
+			  }
+			  .reverb-embedded-listing img {
+			    border-top-left-radius: 0.25em;
+			    border-top-right-radius: 0.25em;
+			    width: 100%;
+			  }
+			  .reverb-embedded-listing img:hover { opacity: 0.85; }
+			</style>
+		</head>
 	<body>
 	<div id="contentPage">
 			<div class="header navbar-fixed-top">
@@ -31,115 +80,89 @@
 					</div>
 				</div>
 			</div>
-		<!-- <div class="row searchRow">
-			<div id="custom-search-input">
-                <div class="input-group col-md-3">
-                	<form id="search-form">
-                        <span class="input-group-btn">
-                            <input type="text" class="search-query form-control" placeholder="Search all amps" />
-                            <button id="searchButton" class="btn btn-danger" type="submit">
-                                <span class=" glyphicon glyphicon-search"></span>
-                            </button>
-                        </span>
-                	</form>
-                </div>
-            </div>
-		</div> -->
 		<div class="container">
-
             <div class="row contentRow grid">
-
 				<p id="searchResults"></p>
-
 				<!-- This is the main view of the initial search results -->
 				<div id="detail" class="col-lg-12 col-sm-12 noteContainerContainer grid-item" >
 					<div class="noteContainer">
 						<table class="table table-striped">
 							<tbody>
-
-						<!-- <h4 class="_id">ID:</h3> -->
-						<tr><td><h4 class=""></h4></td></tr>
-						<tr><td><h4 class="image"></h4></td></tr>
-
-						<tr><td><h4 class="amp_model"></h4></td></tr>
-						<tr><td><h4 class="amp_manufacturer"></h4></td></tr>
-						<tr><td><h4 class="amp_style"></h4></td></tr>
-						<tr><td><h4 class="wattage"></h4></td></tr>
-						<!-- <tr><td><h4 class="video"></h4></td></tr> -->
-						<tr><td><h4 class="foot_switchable"></h4></td></tr>
-						<tr><td><h4 class="number_of_channels"></h4></td></tr>
-						<tr><td><h4 class="midi_capable"></h4></td></tr>
-						<tr><td><h4 class="has_clean"></h4></td></tr>
-						<tr><td><h4 class="sounds_like_players"></h4></td></tr>
-						<tr><td><h4 class="percussive"></h4></td></tr>
-						<tr><td><h4 class="percussive_level_amount"></h4></td></tr>
-						<tr><td><h4 class="feel_overall"></h4></td></tr>
-						<tr><td><h4 class="feel_low_end"></h4></td></tr>
-						<tr><td><h4 class="feel_high_end"></h4></td></tr>
-						<tr><td><h4 class="feel_rating"></h4></td></tr>
-						<tr><td><h4 class="compression_level"></h4></td></tr>
-						<tr><td><h4 class="compression_level_amount"></h4></td></tr>
-						<tr><td><h4 class="dynamic_feel_punch_vs_compression"></h4></td></tr>
-						<tr><td><h4 class="easy_to_play"></h4></td></tr>
-						<tr><td><h4 class="easy_to_play_amount"></h4></td></tr>
-						<tr><td><h4 class="sound_good_low_volume"></h4></td></tr>
-						<tr><td><h4 class="preferred_speaker_combination"></h4></td></tr>
-						<tr><td><h4 class="best_music_genre_served"></h4></td></tr>
-						<tr><td><h4 class="price_point_new"></h4></td></tr>
-						<tr><td><h4 class="price_point_used"></h4></td></tr>
-						<tr><td><h4 class="popularity"></h4></td></tr>
-						<tr><td><h4 class="boutique"></h4></td></tr>
-						<tr><td><h4 class="rarity"></h4></td></tr>
-						<tr><td><h4 class="year_introduced"></h4></td></tr>
-						<tr><td><h4 class="di_capable"></h4></td></tr>
-						<tr><td><h4 class="power_scaling"></h4></td></tr>
-						<tr><td><h4 class="has_variac"></h4></td></tr>
-						<tr><td><h4 class="has_switchable_wattage"></h4></td></tr>
-						<tr><td><h4 class="gain_rating"></h4></td></tr>
-						<tr><td><h4 class="eq_frustration_level"></h4></td></tr>
-						<tr><td><h4 class="house_friendly"></h4></td></tr>
-						<tr><td><h4 class="overall_value_for_price_point"></h4></td></tr>
-						<tr><td><h4 class="clarity"></h4></td></tr>
-						<tr><td><h4 class="note_articulation"></h4></td></tr>
-						<tr><td><h4 class="sparkle"></h4></td></tr>
-						<tr><td><h4 class="fx_loop_serial"></h4></td></tr>
-						<tr><td><h4 class="fx_loop_parallel"></h4></td></tr>
-						<tr><td><h4 class="has_line_out"></h4></td></tr>
-						<tr><td><h4 class="has_resonance_or_depth"></h4></td></tr>
-						<tr><td><h4 class="eq_voicing"></h4></td></tr>
-						<tr><td><h4 class="tone_stack"></h4></td></tr>
-
-
-						<tr><td><div class="features">Features:</div></td></tr>
-						<!-- <button type=button id="edit_amp" class="btn btn-default"> Edit Amp </button> -->
-						</tbody>
-					</table>
-
-
+								<!-- <h4 class="_id">ID:</h3> -->
+								<tr><td><h4 class=""></h4></td></tr>
+								<tr><td><h4 class="image"></h4></td></tr>
+								<tr><td><h4 class="amp_model"></h4></td></tr>
+								<tr><td><h4 class="amp_manufacturer"></h4></td></tr>
+								<tr><td><h4 class="amp_style"></h4></td></tr>
+								<tr><td><h4 class="wattage"></h4></td></tr>
+								<tr><td><h4 class="foot_switchable"></h4></td></tr>
+								<tr><td><h4 class="number_of_channels"></h4></td></tr>
+								<tr><td><h4 class="midi_capable"></h4></td></tr>
+								<tr><td><h4 class="has_clean"></h4></td></tr>
+								<tr><td><h4 class="sounds_like_players"></h4></td></tr>
+								<tr><td><h4 class="percussive"></h4></td></tr>
+								<tr><td><h4 class="percussive_level_amount"></h4></td></tr>
+								<tr><td><h4 class="feel_overall"></h4></td></tr>
+								<tr><td><h4 class="feel_low_end"></h4></td></tr>
+								<tr><td><h4 class="feel_high_end"></h4></td></tr>
+								<tr><td><h4 class="feel_rating"></h4></td></tr>
+								<tr><td><h4 class="compression_level"></h4></td></tr>
+								<tr><td><h4 class="compression_level_amount"></h4></td></tr>
+								<tr><td><h4 class="dynamic_feel_punch_vs_compression"></h4></td></tr>
+								<tr><td><h4 class="easy_to_play"></h4></td></tr>
+								<tr><td><h4 class="easy_to_play_amount"></h4></td></tr>
+								<tr><td><h4 class="sound_good_low_volume"></h4></td></tr>
+								<tr><td><h4 class="preferred_speaker_combination"></h4></td></tr>
+								<tr><td><h4 class="best_music_genre_served"></h4></td></tr>
+								<tr><td><h4 class="price_point_new"></h4></td></tr>
+								<tr><td><h4 class="price_point_used"></h4></td></tr>
+								<tr><td><h4 class="popularity"></h4></td></tr>
+								<tr><td><h4 class="boutique"></h4></td></tr>
+								<tr><td><h4 class="rarity"></h4></td></tr>
+								<tr><td><h4 class="year_introduced"></h4></td></tr>
+								<tr><td><h4 class="di_capable"></h4></td></tr>
+								<tr><td><h4 class="power_scaling"></h4></td></tr>
+								<tr><td><h4 class="has_variac"></h4></td></tr>
+								<tr><td><h4 class="has_switchable_wattage"></h4></td></tr>
+								<tr><td><h4 class="gain_rating"></h4></td></tr>
+								<tr><td><h4 class="eq_frustration_level"></h4></td></tr>
+								<tr><td><h4 class="house_friendly"></h4></td></tr>
+								<tr><td><h4 class="overall_value_for_price_point"></h4></td></tr>
+								<tr><td><h4 class="clarity"></h4></td></tr>
+								<tr><td><h4 class="note_articulation"></h4></td></tr>
+								<tr><td><h4 class="sparkle"></h4></td></tr>
+								<tr><td><h4 class="fx_loop_serial"></h4></td></tr>
+								<tr><td><h4 class="fx_loop_parallel"></h4></td></tr>
+								<tr><td><h4 class="has_line_out"></h4></td></tr>
+								<tr><td><h4 class="has_resonance_or_depth"></h4></td></tr>
+								<tr><td><h4 class="eq_voicing"></h4></td></tr>
+								<tr><td><h4 class="tone_stack"></h4></td></tr>
+								<tr><td><div class="features">Features:</div></td></tr>
+								<!-- <button type=button id="edit_amp" class="btn btn-default"> Edit Amp </button> -->
+							</tbody>
+						</table>
+						<!-- Embedding a more complex search -->
+						<div id="reverbdata" data-reverb-embed-listings
+						     data-reverb-search-product-type="amps"
+						     data-reverb-search-make=""
+						     data-reverb-search-model=""
+						     data-reverb-search-per-page="8">
+						</div>
 		 			</div>
-					<!-- <div class="run"></div> -->
 				</div>
-				<!-- <div id="generateNote"></div> -->
 			</div>
-
-			<!-- This is the detail view once an amp is clicked -->
-			<!-- <div class="row displayRow" style="display:none">
-				<div class="col-md-12">
-					<h4 class="_id">IDDDD:</h3>
-					<h4 class="amp_model">Model:</h2>
-    				<h4 class="amp_manufacturer">Manufacturer:</h6>
-    				<h4 class="amp_style">Style:</h4>
-					<h4 class="wattage">Wattage:</h4>
-					<h4 class="image"></h4>
-					<p class="features">Features:</p>
-
-				</div>
-			</div> -->
 		</div>
     </div>
     <script type="text/javascript">
-    var queryString = new Array();
-    $(function () {
+
+	// $(document).ready(function () {
+
+
+
+	var queryString = new Array();
+	var revMake = "";
+	var revModel = "";
+	$(function () {
         if (queryString.length == 0) {
             if (window.location.search.split('?').length > 1) {
                 var params = window.location.search.split('?')[1].split('&');
@@ -152,11 +175,20 @@
         }
         if (queryString["id"] != null) {
             var ampDiv = $('#detail');
-            console.log(ampDiv);
+			var reverbDiv = $('#reverbdata');
+
+            // console.log(ampDiv);
             $.get("/ampdetail?query=" + value, function(response){
                 var amp = response[0];
+
                 // ampDiv.find('._id').text(amp._id.toString());
                 ampDiv.find('.amp_model').text("Model: " + amp.amp_model);
+				revMake = amp.amp_manufacturer;
+				revModel = amp.amp_model;
+				reverbDiv.attr('data-reverb-search-make',revMake);
+				reverbDiv.attr('data-reverb-search-model',revModel);
+
+
                 ampDiv.find('.noteContainer').click(handleEditClick);
                 ampDiv.find('.amp_manufacturer').text("Manufacturer: " + amp.amp_manufacturer);
                 ampDiv.find('.amp_style').text("Style: " + amp.amp_style);
@@ -206,22 +238,19 @@
 				ampDiv.find('.has_resonance_or_depth').text("Resonance or Depth Control: " + amp.has_resonance_or_depth);
 				ampDiv.find('.eq_voicing').text("EQ Voicing Description: " + amp.eq_voicing);
 				ampDiv.find('.tone_stack').text("Tone Stack: " + amp.tone_stack)
-
-				});
+			});
         }
     });
 
-
 	function handleEditClick(evt) {
-
 		var target = $(evt.target);
 		target = target.parents('.noteContainerContainer');
-
 		var url = "amp-edit.html?id=" + queryString["id"];
 		   window.location.href = url;
-
 	   }
+	//    <!-- This script loads the Reverb Embedded Widget -->
+	function _RRR(){var e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",e.onload=function(){var e=document.createElement("script");e.src="https://d1g5417jjjo7sf.cloudfront.net/assets/embed/reverb.js",document.body.appendChild(e)},document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",_RRR,!1):window.attachEvent?window.attachEvent("onload",_RRR):window.onload=_RRR;
 
-    </script>
+	</script>
 	</body>
 </html>
