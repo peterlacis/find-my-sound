@@ -33,6 +33,12 @@ h2 {
 	font-family: 'Covered By Your Grace';
 	/*font-weight: bold;*/
 }
+
+h4 {
+	font-weight: bold;
+
+}
+
 #submit_amp {
 	background-color: #333333;
 	color: #666666;
