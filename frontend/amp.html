@@ -33,333 +33,331 @@
 					<div class="ampContainer">
 						<table class="table table-striped">
 							<tbody>
+								<tr><td><div class="amp_features"><input id="amp_model"  placeholder="Model" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="amp_manufacturer" placeholder="Brand"/></div></h3></td></tr>
+								<tr><td><div class="amp_features"><input id="amp_style" placeholder="Style (e.g. rock, metal, blues, country...)" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="wattage" placeholder="Wattage" /></div></td></tr>
+								<tr><td><div class="amp_features"><textarea id="features" rows="4" cols="65" placeholder="Features"></textarea></div></td></tr>
+								<tr><td><div class="amp_features"><input id="image" placeholder="Image" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="video" placeholder="Video Link" /></div></td></tr>
+								<tr><td><div class="amp_features">Foot Switchable?
+									<select id="foot_switchable">
+										<option value=""> - choose whether foot switchable - </option>
+										<option value="true">is footswitchable</option>
+										<option value="false">is not footswitchable</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features"><input id="number_of_channels" placeholder="Number of Channels" /></div></td></tr>
+								<tr><td><div class="amp_features">MIDI Capable?
+									<select id="midi_capable">
+										<option value=""> - choose whether MIDI capable - </option>
+									   	<option value="true">MIDI capable</option>
+									   	<option value="false">not MIDI capable</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has a Clean Channel?
+									<select id="has_clean">
+										<option value=""> - choose whether has clean channel - </option>
+										<option value="true">has clean channel</option>
+										<option value="false">no clean channel</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features"><input id="sounds_like_players" placeholder="Players who would use this" /></div></td></tr>
+								<tr><td><div class="amp_features">Percussive?
+									<select id="percussive">
+										<option value=""> - choose whether percussive - </option>
+									   	<option value="true">percussive</option>
+									   	<option value="false">not percussive</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">How Percussive?<br>
+									<select id="percussive_level_amount">
+										<option value=""> - choose percussion amount - </option>
+										<option value="1">1 - not percussive</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - very percussive</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features"><input id="feel_overall" placeholder="Overall Feel Description" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="feel_low_end" placeholder="Low end feel e.g. tight or loose" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="feel_high_end" placeholder="High end feel e.g. smooth or sharp" /></div></td></tr>
+								<tr><td><div class="amp_features">Feel rating:<br>
+									<select id="feel_rating">
+										<option value=""> - choose feel rating - </option>
+										<option value="1">1 - loose</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - tight</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features"><input id="compression_level" placeholder="Compression Description" /></div></td></tr>
+								<tr><td><div class="amp_features">Compression level:<br>
+									<select id="compression_level_amount">
+										<option value=""> - choose compression level - </option>
+										<option value="1">1 - not compressed</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - very compressed</option>
+									</select>
+								</div></td></tr>
 
-						<tr><td><div class="amp_features"><input id="amp_model"  placeholder="Model" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="amp_manufacturer" placeholder="Brand"/></div></h3></td></tr>
-						<tr><td><div class="amp_features"><input id="amp_style" placeholder="Style (e.g. rock, metal, blues, country...)" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="wattage" placeholder="Wattage" /></div></td></tr>
-						<tr><td><div class="amp_features"><textarea id="features" rows="4" cols="65" placeholder="Features"></textarea></div></td></tr>
-						<tr><td><div class="amp_features"><input id="image" placeholder="Image" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="video" placeholder="Video Link" /></div></td></tr>
-						<tr><td><div class="amp_features">Foot Switchable?
-							<select id="foot_switchable">
-								<option value=""> - choose whether foot switchable - </option>
-								<option value="true">is footswitchable</option>
-								<option value="false">is not footswitchable</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features"><input id="number_of_channels" placeholder="Number of Channels" /></div></td></tr>
-						<tr><td><div class="amp_features">MIDI Capable?
-							<select id="midi_capable">
-								<option value=""> - choose whether MIDI capable - </option>
-							   	<option value="true">MIDI capable</option>
-							   	<option value="false">not MIDI capable</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has a Clean Channel?
-							<select id="has_clean">
-								<option value=""> - choose whether has clean channel - </option>
-								<option value="true">has clean channel</option>
-								<option value="false">no clean channel</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features"><input id="sounds_like_players" placeholder="Players who would use this" /></div></td></tr>
-						<tr><td><div class="amp_features">Percussive?
-							<select id="percussive">
-								<option value=""> - choose whether percussive - </option>
-							   	<option value="true">percussive</option>
-							   	<option value="false">not percussive</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">How Percussive?<br>
-							<select id="percussive_level_amount">
-								<option value=""> - choose percussion amount - </option>
-								<option value="1">1 - not percussive</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - very percussive</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features"><input id="feel_overall" placeholder="Overall Feel Description" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="feel_low_end" placeholder="Low end feel e.g. tight or loose" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="feel_high_end" placeholder="High end feel e.g. smooth or sharp" /></div></td></tr>
-						<tr><td><div class="amp_features">Feel rating:<br>
-							<select id="feel_rating">
-								<option value=""> - choose feel rating - </option>
-								<option value="1">1 - loose</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - tight</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features"><input id="compression_level" placeholder="Compression Description" /></div></td></tr>
-						<tr><td><div class="amp_features">Compression level:<br>
-							<select id="compression_level_amount">
-								<option value=""> - choose compression level - </option>
-								<option value="1">1 - not compressed</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - very compressed</option>
-							</select>
-						</div></td></tr>
-
-						<tr><td><div class="amp_features"><input id="dynamic_feel_punch_vs_compression" placeholder="Dynamic Feel - punch vs compression description" /></div></td></tr>
-						<tr><td><div class="amp_features">Easy to Play?
-							<select id="easy_to_play">
-								<option value=""> - choose whether easy to play - </option>
-							   	<option value="true">easy to play</option>
-							   	<option value="false">not not easy to play</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">How easty to play?<br>
-							<select id="easy_to_play_amount">
-								<option value=""> - choose ease of play level - </option>
-								<option value="1">1 - difficult to play</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - easy to play</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Sounds good at low volume?
-							<select id="sound_good_low_volume">
-								<option value=""> - choose whether good at low volume - </option>
-							   	<option value="true">YES - good at low volume</option>
-							   	<option value="false">NO - not good at low volume</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features"><input id="preferred_speaker_combination" placeholder="Preferred spakers?" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="best_music_genre_served" placeholder="Genre served?" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="price_point_new" placeholder="Price NEW" /></div></td></tr>
-						<tr><td><div class="amp_features"><input id="price_point_used" placeholder="Price USED" /></div></td></tr>
-						<tr><td><div class="amp_features">How popular?<br>
-								<select id="popularity">
-									<option value=""> - choose popularity level - </option>
-									<option value="1">1 - not popular</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-									<option value="10">10 - very popular</option>
-								</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Boutique Amp?
-							<select id="boutique">
-								<option value=""> - choose whether boutique - </option>
-							   	<option value="true">YES - is boutique</option>
-							   	<option value="false">No - is not boutique</option>
-						   </select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">How rare is this amp?<br>
-								<select id="rarity">
-									<option value=""> - choose rarity level - </option>
-									<option value="1">1 - not rare</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-									<option value="5">5</option>
-									<option value="6">6</option>
-									<option value="7">7</option>
-									<option value="8">8</option>
-									<option value="9">9</option>
-									<option value="10">10 - very rare</option>
-								</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features"><input id="year_introduced" placeholder="Year Introduced" /></div></td></tr>
-						<tr><td><div class="amp_features">D.I. Capable?
-							<select id="di_capable">
-								<option value=""> - choose whether has D.I. - </option>
-							   	<option value="true">YES - has D.I.</option>
-							   	<option value="false">NO - no D.I.</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has power scaling?
-							<select id="power_scaling">
-								<option value=""> - choose whether has power scaling - </option>
-							   	<option value="true">YES - has power scaling</option>
-							   	<option value="false">NO - no power scaling</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has variac capability?
-							<select id="has_variac">
-								<option value=""> - choose whether has vaiac - </option>
-								<option value="true">YES - has variac</option>
-								<option value="false">NO - no variac</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has switchable wattage?
-							<select id="has_switchable_wattage">
-								<option value=""> - choose whether switchable wattage - </option>
-							   	<option value="true">YES - switchable wattage</option>
-							   	<option value="false">NO - no switchable wattage</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">
-							<select id="gain_rating">Gain rating:<br>
-								<option value=""> - choose gain rating - </option>
-								<option value="1">1 - clean amp</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - face melter</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">EQ frustration level:<br>
-							<select id="eq_frustration_level">
-								<option value=""> - choose how frustrating the amp is to EQ - </option>
-								<option value="1">1 - easy to EQ</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - Mesa Boogie Mark Series</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">House friendly?
-							<select id="house_friendly">
-								<option value=""> - choose whether house friendly - </option>
-							   	<option value="true">YES - house friendly</option>
-							   	<option value="false">NO - not house friendly</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Overall value for price point?<br>
-							<select id="overall_value_for_price_point">
-								<option value=""> - choose value level for price point - </option>
-								<option value="1">1 - poor value</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - great value</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Clarity:<br>
-							<select id="clarity">
-								<option value=""> - choose clarity level - </option>
-								<option value="1">1 - super muddy</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - super clear</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Note articulation amount:<br>
-							<select id="note_articulation">
-								<option value=""> - choose how articulate - </option>
-								<option value="1">1 - super mushy</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - super articulate</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Sparkle:<br>
-							<select id="sparkle">
-								<option value=""> - choose sparkle level - </option>
-								<option value="1">1 - no sparkle</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-								<option value="9">9</option>
-								<option value="10">10 - super sparkle</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has Serial Effects Loop?
-							<select id="fx_loop_serial">
-								<option value=""> - choose whether serial effects loop - </option>
-								<option value="true">YES - has serial effects loop</option>
-								<option value="false">NO - no serial effects loop</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has Parallel Effects Loop?
-							<select id="fx_loop_parallel">
-								<option value=""> - choose whether parallel effects loop - </option>
-							   	<option value="true">YES - has parallel effects loop</option>
-							   	<option value="false">No - no parallel effects loop</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has Line Out?
-							<select id="has_line_out">
-								<option value=""> - choose whether has line out - </option>
-							   	<option value="true">YES - has line out</option>
-							   	<option value="false">NO - no line out</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features">Has Resonance or Depth Controls?
-							<select id="has_resonance_or_depth">
-								<option value=""> - choose whether has resonance or depth - </option>
-							   	<option value="true">YES - has resonance or depth</option>
-							   	<option value="false">NO - no resonance or depth</option>
-							</select>
-						</div></td></tr>
-						<tr><td><div class="amp_features"><input id="eq_voicing" placeholder="EQ Voicing description" /></div></td></tr>
-						<tr><td><div class="amp_features">Tone stack:<br>
-							<select id="tone_stack">
-								<option value=""> - choose tone stack - </option>
-								<option value="Fender">Fender</option>
-								<option value="Marshall">Marshall</option>
-								<option value="Vox">Vox</option>
-								<option value="Other">Other</option>
-							</select>
-						</div></td></tr>
-
-						<tr><td><button type=button id="submit_amp" class="btn btn-default"> Submit New Amp </button></td></tr>
-					</tbody>
-				</table>
+								<tr><td><div class="amp_features"><input id="dynamic_feel_punch_vs_compression" placeholder="Dynamic Feel - punch vs compression description" /></div></td></tr>
+								<tr><td><div class="amp_features">Easy to Play?
+									<select id="easy_to_play">
+										<option value=""> - choose whether easy to play - </option>
+									   	<option value="true">easy to play</option>
+									   	<option value="false">not not easy to play</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">How easty to play?<br>
+									<select id="easy_to_play_amount">
+										<option value=""> - choose ease of play level - </option>
+										<option value="1">1 - difficult to play</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - easy to play</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Sounds good at low volume?
+									<select id="sound_good_low_volume">
+										<option value=""> - choose whether good at low volume - </option>
+									   	<option value="true">YES - good at low volume</option>
+									   	<option value="false">NO - not good at low volume</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features"><input id="preferred_speaker_combination" placeholder="Preferred spakers?" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="best_music_genre_served" placeholder="Genre served?" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="price_point_new" placeholder="Price NEW" /></div></td></tr>
+								<tr><td><div class="amp_features"><input id="price_point_used" placeholder="Price USED" /></div></td></tr>
+								<tr><td><div class="amp_features">How popular?<br>
+										<select id="popularity">
+											<option value=""> - choose popularity level - </option>
+											<option value="1">1 - not popular</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10 - very popular</option>
+										</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Boutique Amp?
+									<select id="boutique">
+										<option value=""> - choose whether boutique - </option>
+									   	<option value="true">YES - is boutique</option>
+									   	<option value="false">No - is not boutique</option>
+								   </select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">How rare is this amp?<br>
+										<select id="rarity">
+											<option value=""> - choose rarity level - </option>
+											<option value="1">1 - not rare</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10 - very rare</option>
+										</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features"><input id="year_introduced" placeholder="Year Introduced" /></div></td></tr>
+								<tr><td><div class="amp_features">D.I. Capable?
+									<select id="di_capable">
+										<option value=""> - choose whether has D.I. - </option>
+									   	<option value="true">YES - has D.I.</option>
+									   	<option value="false">NO - no D.I.</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has power scaling?
+									<select id="power_scaling">
+										<option value=""> - choose whether has power scaling - </option>
+									   	<option value="true">YES - has power scaling</option>
+									   	<option value="false">NO - no power scaling</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has variac capability?
+									<select id="has_variac">
+										<option value=""> - choose whether has vaiac - </option>
+										<option value="true">YES - has variac</option>
+										<option value="false">NO - no variac</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has switchable wattage?
+									<select id="has_switchable_wattage">
+										<option value=""> - choose whether switchable wattage - </option>
+									   	<option value="true">YES - switchable wattage</option>
+									   	<option value="false">NO - no switchable wattage</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">
+									<select id="gain_rating">Gain rating:<br>
+										<option value=""> - choose gain rating - </option>
+										<option value="1">1 - clean amp</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - face melter</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">EQ frustration level:<br>
+									<select id="eq_frustration_level">
+										<option value=""> - choose how frustrating the amp is to EQ - </option>
+										<option value="1">1 - easy to EQ</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - Mesa Boogie Mark Series</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">House friendly?
+									<select id="house_friendly">
+										<option value=""> - choose whether house friendly - </option>
+									   	<option value="true">YES - house friendly</option>
+									   	<option value="false">NO - not house friendly</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Overall value for price point?<br>
+									<select id="overall_value_for_price_point">
+										<option value=""> - choose value level for price point - </option>
+										<option value="1">1 - poor value</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - great value</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Clarity:<br>
+									<select id="clarity">
+										<option value=""> - choose clarity level - </option>
+										<option value="1">1 - super muddy</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - super clear</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Note articulation amount:<br>
+									<select id="note_articulation">
+										<option value=""> - choose how articulate - </option>
+										<option value="1">1 - super mushy</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - super articulate</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Sparkle:<br>
+									<select id="sparkle">
+										<option value=""> - choose sparkle level - </option>
+										<option value="1">1 - no sparkle</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="10">10 - super sparkle</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has Serial Effects Loop?
+									<select id="fx_loop_serial">
+										<option value=""> - choose whether serial effects loop - </option>
+										<option value="true">YES - has serial effects loop</option>
+										<option value="false">NO - no serial effects loop</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has Parallel Effects Loop?
+									<select id="fx_loop_parallel">
+										<option value=""> - choose whether parallel effects loop - </option>
+									   	<option value="true">YES - has parallel effects loop</option>
+									   	<option value="false">No - no parallel effects loop</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has Line Out?
+									<select id="has_line_out">
+										<option value=""> - choose whether has line out - </option>
+									   	<option value="true">YES - has line out</option>
+									   	<option value="false">NO - no line out</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features">Has Resonance or Depth Controls?
+									<select id="has_resonance_or_depth">
+										<option value=""> - choose whether has resonance or depth - </option>
+									   	<option value="true">YES - has resonance or depth</option>
+									   	<option value="false">NO - no resonance or depth</option>
+									</select>
+								</div></td></tr>
+								<tr><td><div class="amp_features"><input id="eq_voicing" placeholder="EQ Voicing description" /></div></td></tr>
+								<tr><td><div class="amp_features">Tone stack:<br>
+									<select id="tone_stack">
+										<option value=""> - choose tone stack - </option>
+										<option value="Fender">Fender</option>
+										<option value="Marshall">Marshall</option>
+										<option value="Vox">Vox</option>
+										<option value="Other">Other</option>
+									</select>
+								</div></td></tr>
+								<tr><td><button type=button id="submit_amp" class="btn btn-default"> Submit New Amp </button></td></tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
