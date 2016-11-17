@@ -39,7 +39,13 @@
 							<div class="amp_features"><textarea id="features" rows="4" cols="65" placeholder="Features"></textarea></div>
 							<div class="amp_features"><input id="image" placeholder="Image" /></div>
 							<div class="amp_features"><input id="video" placeholder="Video Link" /></div>
-							<div class="amp_features">Foot Switchable? <input id="foot_switchable" type="radio" name="foot_switchable" value="true"> True <input id="foot_switchable" type="radio" name="foot_switchable" value="false"> False </div>
+							<tr><td><div class="amp_features">Foot Switchable?
+								<select id="foot_switchable">
+									<option value=""> - choose whether foot switchable - </option>
+									<option value="true">is footswitchable</option>
+									<option value="false">is not footswitchable</option>
+								</select>
+							</div></td></tr>
 							<div class="amp_features"><input id="number_of_channels" placeholder="Number of Channels" /></div>
 							<div class="amp_features">Midi Capable? <input id="midi_capable" type="radio" name="midi_capable" value="true"> True <input id="midi_capable" type="radio" name="midi_capable" value="false"> False </div>
 							<div class="amp_features">Has a Clean Channel? <input id="has_clean" type="radio" name="has_clean" value="true"> True <input id="has_clean" type="radio" name="has_clean" value="false"> False </div>
