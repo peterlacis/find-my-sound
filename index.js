@@ -10,7 +10,7 @@ var app = express();
 const PORT = process.env.PORT || 5000;
 
 var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost", function(err) {
+mongoose.connect("mongodb://localhost:37211", function(err) {
 	if (err && err.message.indexOf("ECONNREFUSED") !== -1) {
 		console.log("Unable to connect to mongodb!");
 		console.log("How about to remember to run the database first!");
